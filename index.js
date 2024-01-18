@@ -264,7 +264,7 @@ import { URLs } from './user-data/urls.js';
         span.className = "badge badge-secondary";
         span.innerHTML = category;
         divSpan.append(span);
-      }
+      } 
   
       const divSubHeading = document.createElement("div");
       divSubHeading.className = "sub-heading";
