@@ -181,6 +181,26 @@ figure figcaption {
   /* border: 3px solid white; */
 }
 
+#resume-button {
+  color: #664229;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#resume-button div{
+  appearance: none;
+  background: #E5D3B3;
+  border-radius: 8px;
+  padding: 1rem;
+  
+}
+
+#resume-button div img {
+  width: 1.5rem;
+  margin-left:2px;
+}
+
 #colorlib-aside .author-img img {
   height: 100%;
   object-fit: cover;
@@ -686,7 +706,9 @@ body.offcanvas .colorlib-nav-toggle {
   padding: 0;
 }
 
-<!-----projectcss------------ > #projects {
+/* <!-----projectcss------------ >  */
+
+#projects {
   padding: 50px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
