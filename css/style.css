@@ -733,7 +733,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .project-card {
-  height: 150px;
+  height: 180px;
 }
 
 .project-info {
@@ -2055,6 +2055,7 @@ ul {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  color: #664229;
 }
 
 .accordion li:last-child .link {
@@ -2149,7 +2150,14 @@ ul {
   font-size: 13px;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #000;
+  color: #664229;
+}
+
+.project-title {
+  font-size: 13px;
+  color: #664229;
+  font-weight: 700;
+  margin: 0;
 }
 
 .img-fluid {

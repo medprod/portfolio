@@ -165,11 +165,15 @@ import { URLs } from './user-data/urls.js';
   
     let p = document.createElement("p");
     p.className = "project-description";
+
+    let title = document.createElement("span")
+    title.className = "project-title"
   
     let divSpan = document.createElement("div");
   
     let divSubHeading = document.createElement("div");
     divSubHeading.className = "sub-heading";
+    divSubHeading.append(title) 
     divSubHeading.append(p);
     divSubHeading.append(divSpan);
     divResumeContentRight.append(divSubHeading);
@@ -194,8 +198,8 @@ import { URLs } from './user-data/urls.js';
       a.href = items[i].preview;
   
       img.src = items[i].image;
-  
       p.innerHTML = items[i].summary;
+      title.innerHTML = items[i].projectName;
   
       divSpan.innerHTML = "";
       for (let k = 0; k < items[i].techStack.length; k++) {
@@ -264,7 +268,7 @@ import { URLs } from './user-data/urls.js';
         span.className = "badge badge-secondary";
         span.innerHTML = category;
         divSpan.append(span);
-      } 
+      }
   
       const divSubHeading = document.createElement("div");
       divSubHeading.className = "sub-heading";

@@ -51,100 +51,109 @@ export const skills = [
 
 export const projects = {
     webProjects: [
-        // {
-        //     projectName: "Programming Diaries",
-        //     image: "images/programmingdiaries.png",
-        //     summary:
-        //         "Developed a full stack blog application to provide content on techical topics across the internet with admin interface.",
-        //     preview: "https://programmingdiaries.herokuapp.com/",
-        //     techStack: ["Django", "SQLite", "Bootstrap", "JavaScript", "Heroku"],
-        // },
-        // {
-        //     projectName: "Find Your Bank",
-        //     image: "images/findyourbank.png",
-        //     summary:
-        //         "Developed a React application to render a list of banks fetched from API. Filtered the banks based on queries from localstorage, marked favorites banks.",
-        //     preview: "https://clever-fermi-0d5d76.netlify.app",
-        //     techStack: ["Reactjs", "Bootstrap", "JavaScript", "Netlify"],
-        // },
-        // {
-        //     projectName: "Web Portfolio",
-        //     image: "images/portfolio.png",
-        //     summary:
-        //         "Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.",
-        //     preview: "https://github.com/vinaysomawat/Travographer-Portal",
-        //     techStack: ["HTML", "Bootstrap", "JavaScript"],
-        // },
-        // {
-        //     projectName: "Resume Builder",
-        //     image: "images/resume-builder.png",
-        //     summary:
-        //         "Browser based editor to build and download Resumes in a customizable templates.",
-        //     preview: "https://vinaysomawat.github.io/Resume-Builder",
-        //     techStack: ["HTML", "Bootstrap", "JavaScript"],
-        // },
+        
+        {
+            projectName: "OpenWeather ETL Pipeline Automation",
+            image: "images/airflow_openweather.png",
+            summary:
+                "In this project, I extracted weather forecast data of the city of Chicago using OpenWeather Map API. Post extraction, I performed appropriate transformations on the data. Using Apache Airflow, I orchestrated & scheduled the data pipeline and loaded the output into an AWS S3 bucket.",
+            preview: "https://github.com/medprod/OpenWeather-Airflow",
+            techStack: ["Apache Airflow", "ETL", "AWS", "Python"],
+        },
     ],
     softwareProjects: [
         {
             projectName: "Financial Time Series Analysis",
-            image: "images/pizzaorderchatbot.png",
+            image: "images/timeseries_financial.png",
             summary:
                 "Using time series data of stock values of 3 major banks for a given period of time, I found the best time series model between ARMA, ARIMA, and SARIMA for stock prediction. ",
-            preview: "https://github.com/vinaysomawat/Pizza-Ordering-ChatBot",
-            techStack: ["Dailogflow", "Firebase"],
+            preview: "https://github.com/medprod/analysis-of-a-financial-time-series",
+            techStack: ["Python", "Time Series Modelling"],
         },
-        // {
-        //     projectName: "WhatsApp-Bot",
-        //     image: "images/whatsappbot.jpg",
-        //     summary:
-        //         "Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
-        //     preview: "https://github.com/vinaysomawat/WhatsApp-Bot",
-        //     techStack: ["Selenium", "Chrome Webdriver", "Python"],
-        // },
-        // {
-        //     projectName: "Bill Generator",
-        //     image: "images/billgenerator.png",
-        //     summary:
-        //         "GUI to transfer data to excel sheets and generate bills on the local shops.",
-        //     preview: "https://github.com/vinaysomawat/Bill-Generator",
-        //     techStack: ["Tkinter", "Openxlpy", "Python"],
-        // },
+        {
+            projectName: "Plagiarism Check",
+            image: "images/plag_check.webp",
+            summary:
+                "Here, I designed a blog search tool to retrieve the top K least redundant blogs. Using basic text processing techniques like edit distance and n-gram models, I developed a plagiarism check tool as a metric for evaluation.",
+            preview: "https://github.com/medprod/plagiarism-check",
+            techStack: ["Python", "Levinstein's Edit Distance", "N-Gram Model"],
+        },
+        {
+            projectName: "Fake News Classification Model",
+            image: "images/fakenews.webp",
+            summary: "In this project, I performed data cleaning & processing using NLP techniques and used ML Algorithms like Logistic Regression, Random Forrest, and SVM to classify news as fake/real.",
+            preview: "https://github.com/medprod/Detecting-Fake-News",
+            techStack: ["Python", "Machine Learning"],
+        },
+        {
+            projectName: "Work Co-Occurrences: Fluke or Not",
+            image: "images/word_co.png",
+            summary:
+                "Word Co-occurrence analysis is widely used in various forms of research and aims to find similarities between word pairs and patterns. Here, we use nltk - natural language tool kit, pandas, and NumPy libraries to analyze two .txt files and understand the co-occurrence of words.",
+            preview: "https://github.com/medprod/word-co-occurrence",
+            techStack: ["NLTK Library", "Pandas", "Python"],
+        },
     ],
     androidProjects: [
-        // {
-        //     projectName: "NITW-CSE",
-        //     image: "images/nitwcse.jpg",
-        //     summary:
-        //         "The Application display details of Department courses, reference books, research, publication and faculty profile.",
-        //     preview: "https://github.com/vinaysomawat/NITW-CSE",
-        //     techStack: ["JAVA", "XML", "Android"],
-        // },
-        // {
-        //     projectName: "CareerHigh-App",
-        //     image: "images/carrerhigh.png",
-        //     summary:
-        //         "The Application display the webpages of website careerhigh.in in android devices.",
-        //     preview: "https://github.com/vinaysomawat/CareerHigh-Android",
-        //     techStack: ["JAVA", "XML", "Android"],
-        // },
+        {
+            projectName: "Instagram Data Cloning",
+            image: "images/instagram.png",
+            summary:
+                "Extracted instagram data and performed various sql queries to analyze.",
+            preview: "https://github.com/medprod/Insta-Data-Cloning",
+            techStack: ["SQL"],
+        },
+        {
+            projectName: "Optimizing Non-Linear Programming Techniques",
+            image: "images/opti.png",
+            summary:
+                "Developed a repository of computer programs with all standard optimization and AI algorithms mainly using Python.",
+            preview: "https://github.com/medprod/Non-Linear-Optimization-Techniques",
+            techStack: ["Python", "Optimization Techniques AI"],
+        },
+        {
+            projectName: "Email Waitlist Web Application",
+            image: "images/waitlist.jpg",
+            summary:
+                "Developed a sample waitlist application using SQL to simulate the common functions of moving through a web queue and used various NodeJS libraries and packages to generate random users that stand presorted for an authentic experience.",
+            preview: "https://github.com/medprod/basic-web-app",
+            techStack: ["Python", "Nodejs", "SQL", "Javascript"],
+        },
+        {
+            projectName: "Web Scraping Bot",
+            image: "images/web-scraping-diagram.png",
+            summary:
+                "Using BeautifulSoup to build a Web Scraping Bot; Scraping stock data on a day to day basis & Sending through Mail.",
+            preview: "https://github.com/medprod/webscraping-bot",
+            techStack: ["Python", "Web Scraping"],
+        },
+
     ],
     freelanceProjects: [
-        // {
-        //     projectName: "SnylloAir.com",
-        //     image: "images/snylloair.png",
-        //     summary:
-        //         "Developed a company website to showcase the purpose, services and products provided by the company to audience.",
-        //     preview: "https://www.snylloair.com/",
-        //     techStack: ["Bootstrap", "JavaScript", "AWS-S3"],
-        // },
-        // {
-        //     projectName: "Delivery+",
-        //     image: "images/AM-Logo-.png",
-        //     summary: "Android Application to display website in android devices.",
-        //     preview:
-        //         "https://play.google.com/store/apps/details?id=com.americanmarket.americanmarketandroid",
-        //     techStack: ["Android", "JAVA", "Play Store"],
-        // },
+        {
+            projectName: "Data Visualization with R",
+            image: "images/r.png",
+            summary:
+                "Recreated a plot from The Economist using ggplot2 and R. Worked with Geom & the ggthemes package to reproduce the scatterplot as accurately as possible.",
+            preview: "https://github.com/medprod/data-visualization-R",
+            techStack: ["R Programming", "ggplot2", "Geom", "ggthemes"],
+        },
+        {
+            projectName: "Analysis: Flavors of Cacao",
+            image: "images/cacao.png",
+            summary: "A thorough analysis and visualization of a dataset that focuses on expert ratings of various types of dark chocolates.",
+            preview:
+                "https://github.com/medprod/open-data-proj2",
+            techStack: ["Python", "Data Analysis", "Data Visualization"],
+        },
+        {
+            projectName: "Analysis: City of Chicago Salaries",
+            image: "images/chicago.png",
+            summary: "A thorough analysis and visualization of the employees, positions, and salaries in Chicago.",
+            preview:
+                "https://github.com/medprod/open-data-proj1",
+            techStack: ["Python", "Data Analysis", "Data Visualization"],
+        },
     ],
 };
 
